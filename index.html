@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastBite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>Fast<span>Bite</span></h2>
+                <i class="fas fa-burger"></i>
+            </div>
+            <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+                </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Cart <span class="cart-count">3</span>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>
+                Hungry?<br>
+                Order <span>Food</span> in Minutes!
+            </h1>
+
+            <p>
+                Get 20% off your first order with code
+            </p>
+
+            <h3>FASTBITE20</h3>
+
+            <button class="order-btn">
+                Order Now
+            </button>
+        </div>
+
+    </section>
+
+    <!-- RESTAURANTS -->
+    <section id="restaurants" class="restaurants">
+
+       <div class="restaurant-header">
+        <h2>Popular Restaurants</h2>
+
+            <a href="#" class="view-all">
+                 View All <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="restaurant-grid">
+
+            <!-- Burger -->
+            <div class="restaurant-card">
+
+                <img src="burger-card.jpeg" alt="Burger House">
+
+                <div class="card-content">
+                    <h3>Burger House</h3>
+
+                    <p>
+                        ⭐ 4.5 (500+ reviews)
+                    </p>
+
+                    <button class="view-btn">
+                        View Menu
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Pizza -->
+            <div class="restaurant-card">
+
+                <img src="pizza-card.jpeg" alt="Pizza Palace">
+
+                <div class="card-content">
+                    <h3>Pizza Palace</h3>
+
+                    <p>
+                        ⭐ 4.6 (800+ reviews)
+                    </p>
+
+                    <button class="view-btn">
+                        View Menu
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Asian Bowl -->
+            <div class="restaurant-card">
+
+                <img src="asian-card.jpeg" alt="Asian Bowl">
+
+                <div class="card-content">
+                    <h3>Asian Bowl</h3>
+
+                    <p>
+                        ⭐ 4.4 (650+ reviews)
+                    </p>
+
+                    <button class="view-btn">
+                        View Menu
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DEALS -->
+    <section id="deals" class="deals">
+
+        <h2>Top Deals</h2>
+
+        <div class="deal-grid">
+
+            <div class="deal-card">
+                <i class="fas fa-tags"></i>
+
+                <h3>20% OFF</h3>
+
+                <p>
+                    On your first order
+                </p>
+            </div>
+
+            <div class="deal-card">
+                <i class="fas fa-motorcycle"></i>
+
+                <h3>Free Delivery</h3>
+
+                <p>
+                    On orders above $20
+                </p>
+            </div>
+
+            <div class="deal-card">
+                <i class="fas fa-percent"></i>
+
+                <h3>Combo Offers</h3>
+
+                <p>
+                    Save more with combos
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+   <!-- CART SIDEBAR -->
+<aside class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <i class="fas fa-times close-cart"></i>
+    </div>
+
+    <!-- Burger -->
+    <div class="cart-item">
+
+        <img src="burger-cart.jpeg" alt="Burger">
+
+        <div class="cart-details">
+            <h4>Classic Burger</h4>
+            <p>$8.99</p>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="remove-btn">
+            <i class="fas fa-trash"></i>
+        </button>
+
+    </div>
+
+    <!-- Pizza -->
+    <div class="cart-item">
+
+        <img src="pizza-cart.jpeg" alt="Pizza">
+
+        <div class="cart-details">
+            <h4>Margherita Pizza</h4>
+            <p>$10.99</p>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="remove-btn">
+            <i class="fas fa-trash"></i>
+        </button>
+
+    </div>
+
+    <!-- Noodles -->
+    <div class="cart-item">
+
+        <img src="noodles-cart.jpeg" alt="Noodles">
+
+        <div class="cart-details">
+            <h4>Veg Hakka Noodles</h4>
+            <p>$7.99</p>
+        </div>
+
+        <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+
+        <button class="remove-btn">
+            <i class="fas fa-trash"></i>
+        </button>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3>Total: $27.97</h3>
+
+        <button class="checkout-btn">
+            Checkout ($27.97)
+        </button>
+
+    </div>
+
+</aside>
+<!-- MENU MODAL -->
+
+<div class="menu-modal">
+
+    <div class="menu-content">
+
+        <span class="close-menu">&times;</span>
+
+        <h2 id="menu-title"></h2>
+
+        <div id="menu-items"></div>
+
+         <button class="add-cart-btn">
+             Add To Cart
+       </button>
+
+        <button class="add-cart-btn">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-container">
+
+          <div>
+
+    <h3>
+        Fast<span>Bite</span>
+        <i class="fas fa-burger"></i>
+    </h3>
+
+    <p>
+        Delicious food delivered fast to your doorstep.
+    </p>
+
+</div>
+
+            <div>
+                <h3>Contact Us</h3>
+
+                <p>📞 (123) 456-7890</p>
+                <p>✉ hello@fastbite.com</p>
+                <p>📍 Food City</p>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
